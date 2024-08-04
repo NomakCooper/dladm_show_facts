@@ -170,12 +170,18 @@ ok: [sol11host] => {
 |ADDRPOLICY       |string                |The link address policy.           |always                  |"auto"              |
 |LACPACTIVITY     |string                |The lacp activity.                 |always                  |"active"            |
 |LACPTIMER        |string                |The lacp timer.                    |always                  |"short"             |
+
+|Key              |Type                  |Description                        |Returned                |Sample              |
+|-----------------|----------------------|-----------------------------------|------------------------|--------------------|
 |dladm_link_list  |list / elements=string|dladm attribute list.              |if attribute is link    |                    |
 |LINK             |string                |The link name.                     |always                  |"net0"              |
 |CLASS            |string                |The link class.                    |always                  |"phys"              |
 |MTU              |string                |The link MTU.                      |always                  |"1500"              |
 |STATE            |string                |The link state.                    |always                  |"up"                |
 |OVER             |string                |The over interface of link.        |always                  |"--"                |
+
+|Key              |Type                  |Description                        |Returned                |Sample              |
+|-----------------|----------------------|-----------------------------------|------------------------|--------------------|
 |dladm_vnic_list  |list / elements=string|dladm attribute list.              |if attribute is vnic    |                    |
 |LINK             |string                |The link name.                     |always                  |"ldoms-vsw0.vport0" |
 |OVER             |string                |The over interface of link.        |always                  |"net0"              |
@@ -183,6 +189,9 @@ ok: [sol11host] => {
 |MACADDRESS       |string                |The link mac address.              |always                  |"0:11:4f:fa:e1:f5"  |
 |MACADDRTYPE      |string                |The link mac address type.         |always                  |"fixed"             |
 |IDS              |string                |The link IDS.                      |always                  |"VID:0,415"         |
+
+|Key              |Type                  |Description                        |Returned                |Sample              |
+|-----------------|----------------------|-----------------------------------|------------------------|--------------------|
 |dladm_ether_list |list / elements=string|dladm attribute list.              |if attribute is ether   |                    |
 |LINK             |string                |The link name.                     |always                  |"net0"              |
 |PTYPE            |string                |The link property type.            |always                  |"current"           |
@@ -190,6 +199,9 @@ ok: [sol11host] => {
 |AUTO             |string                |The link auto.                     |always                  |"yes"               |
 |SPEED-DUPLEX     |string                |The link speed duplex.             |always                  |"1G-f"              |
 |PAUSE            |string                |The link pause.                    |always                  |"bi"                |
+
+|Key              |Type                  |Description                        |Returned                |Sample              |
+|-----------------|----------------------|-----------------------------------|------------------------|--------------------|
 |dladm_phys_list  |list / elements=string|dladm attribute list.              |if attribute is phys    |                    |
 |LINK             |string                |The link name.                     |always                  |"net0"              |
 |MEDIA            |string                |The link type.                     |always                  |"Ethernet"          |
