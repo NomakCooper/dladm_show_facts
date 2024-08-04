@@ -25,7 +25,7 @@
 ```
 ├── /library                
 │   └── dladm_show_facts.py     ##<-- python custom module
-└── dladm_show.yml              ##<-- ansible playbook example for Solaris 11 release
+└── dladm_show.yml              ##<-- ansible playbook example
 ```
 
 #### Requirements :
